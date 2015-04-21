@@ -1,0 +1,18 @@
+#!/bin/sh
+exec scala -nocompdaemon "$0" "$@"
+!#
+
+/*var i = 0
+while (i < args.length) {
+  println("Hello " + args(i))
+  i += 1
+}*/
+
+// args.foreach((arg: String) => println(arg))
+
+// args.foreach(arg => println(arg))
+
+args.foreach(println)
+
+for (arg <- args)
+  println(arg)
